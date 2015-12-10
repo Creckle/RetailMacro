@@ -1,0 +1,15 @@
+## Interface: 11200
+
+## Title: Retail Macros
+## Notes: Trying to emulate the macro API of later WoW versions
+## Author: Creckle
+
+RetailMacros.lua
+Evaluate.lua
+Tokenizer.lua
+Parser.lua
+Core.lua
+Commands.lua
+ActionButtons.lua
+Frame.lua
+Tests.lua
