@@ -4,7 +4,7 @@
 ## Notes: Trying to emulate the macro API of later WoW versions
 ## Author: Creckle
 
-RetailMacros.lua
+RetailMacro.lua
 Evaluate.lua
 Tokenizer.lua
 Parser.lua

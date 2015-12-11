@@ -183,7 +183,6 @@ local function parse_parameter(tokenizer)
 	end
 	
 	local s = tokenizer:get_token()
-	local ls = ""
 	tokenizer:next_token()
 	
 	while true do
@@ -191,7 +190,7 @@ local function parse_parameter(tokenizer)
 			s = s .. tokenizer:get_token()
 			tokenizer:next_token()
 		elseif tokenizer:get_token_id() == Tokenizer.WHITESPACE then
-			ls = tokenizer:get_token()
+			local ls = tokenizer:get_token()
 			tokenizer:next_token()
 			if tokenizer:get_token_id() == Tokenizer.STRING or tokenizer:get_token_id() == Tokenizer.NUMERIC then
 				s = s .. ls
@@ -244,7 +243,7 @@ end
 local function parse_sequence(tokenizer)
 	local block_result, evaluation_result, target, target_type = parse_conditional_block(tokenizer)
 
-	if not block_result then
+    if not block_result then
 		local param_result, param = parse_parameter(tokenizer);
 		return param_result, true, target, param, target_type
 	end

@@ -232,12 +232,12 @@ local mount_names = {
 }
 
 local function find_mount_buff_in_table(tbl)
-	for i, v in ipairs(PLAYER_BUFFS) do
+	for _, v in ipairs(PLAYER_BUFFS) do
 		local i = strlen(v) - 1
 		while i > 1 do 
 			if string.sub(v, i, i) == " " then
 				local s = string.sub(v, i+1, strlen(v))
-				for m, n in ipairs(tbl) do
+				for _, n in ipairs(tbl) do
 					if n == s then
 						return true
 					end
@@ -339,7 +339,7 @@ local function get_player_stance_or_form()
 		return 0
 	end
 	for i=1, GetNumShapeshiftForms() do
-		local icon, name, active = GetShapeshiftFormInfo(i)
+		local _, _, active = GetShapeshiftFormInfo(i)
 		if active then
 			return i
 		end
