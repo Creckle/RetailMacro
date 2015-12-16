@@ -17,8 +17,8 @@
 
 -- f.bar:SetStatusBarTexture(self.Textures[db.texture])
 
--- 
--- 
+--
+--
 -- f.btn = CreateFrame("BUTTON", nil, f, "UIPanelButtonTemplate")
 -- f.btn:SetWidth(100)
 -- f.btn:SetHeight(22)
@@ -27,3 +27,16 @@
 -- f.btn:SetScript("OnClick", function() ChatFrame1:AddMessage("Hello World") end)
 -- f.btn:SetAlpha(1)
 -- f.btn:Show()
+
+RetailMacro_Focus = CreateFrame("Frame");
+
+function RetailMacro_Focus:onLoad()
+    print("focus addon loaded")
+end
+
+local function OnFocusChanged()
+--    print("ON FOCUS")
+end
+
+RetailMacro:RegisterAddon("RetailMacro_Focus", RetailMacro_Focus)
+RetailMacro:RegisterEvent("PLAYER_FOCUS_CHANGED", OnFocusChanged)

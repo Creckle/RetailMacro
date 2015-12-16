@@ -1,0 +1,8 @@
+## Interface: 11200
+
+## Title: Retail Macro Actionbar
+## Notes: '#showtooltip' functionality for actionbars
+## Author: Creckle
+## Dependencies: RetailMacro
+
+ActionButtons.lua

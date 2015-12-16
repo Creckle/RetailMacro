@@ -1,0 +1,50 @@
+--local blizzard_frames = {
+--    ["PlayerFrame"]                 = "player",
+--    ["TargetFrame"]                 = "target",
+--    ["TargetofTargetFrame"]         = "targettarget",
+--    ["PetFrame"]                    = "pet",
+--
+--    ["PartyMemberFrame1"]           = "party1",
+--    ["PartyMemberFrame2"]           = "party2",
+--    ["PartyMemberFrame3"]           = "party3",
+--    ["PartyMemberFrame4"]           = "party4",
+--
+--    ["PartyMemberFrame1PetFrame"]   = "party1",
+--    ["PartyMemberFrame2PetFrame"]   = "party2",
+--    ["PartyMemberFrame3PetFrame"]   = "party3",
+--    ["PartyMemberFrame4PetFrame"]   = "party4"
+--}
+--
+--function RetailMacro_Mouseover:blizz_raid_frame_update_hook(frame)
+--    print("raid_update")
+--end
+--
+--local function register_blizzard_raid_frames(rmm)
+--    local _G = getfenv(0)
+--    local orig = _G["RaidPullout_Update"]
+--
+--    if orig == nil then
+--        print("ERRRROOORRR")
+--    end
+--
+--    _G["RaidPullout_Update"] = (function() rmm:blizz_raid_frame_update_hook(); orig() end)
+--
+--    --    local frame = getglobal("RaidPullout_Update")
+--    --    print(NUM_RAID_GROUPS)
+--    --
+--    --    for i=1, NUM_RAID_GROUPS do
+--    --        local frame = getglobal("RaidGroup"..i);
+--    --
+--    --    end
+--
+--
+--    --    self:Hook("RaidPullout_Update", function() print("RAID PULLOUT UPDATE"); RaidPullout_Update() end)
+--end
+--
+--function RetailMacro_Mouseover:register_blizzard_unit_frames()
+--    for f, unit in blizzard_frames do
+--        local frame = getglobal(f)
+--        self:setEnterHook(frame, unit)
+--        self:setLeaveHook(frame)
+--    end
+--end

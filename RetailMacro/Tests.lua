@@ -125,37 +125,38 @@ local unit_id_test = {
 }
 
 function SlashCmdList.MACROTEST(msg, editbox)
-	-- for i, s in pairs(valid_syntax_tests) do
-		-- parse_macro(s)
+--    print("TESTS")
+--	 for _, s in pairs(valid_syntax_tests) do
+--		 RetailMacro:evaluate_command(s)
+--	 end
+	
+--    for _, s in pairs(invalid_syntax_tests) do
+--        RetailMacro:evaluate_command(s)
+--    end
+	
+	-- for _, s in pairs(valid_target_tests) do
+		-- RetailMacro:evaluate_command(s)
 	-- end
 	
-	-- for i, s in pairs(invalid_syntax_tests) do
-		-- parse_macro(s)
-	-- end
+--	 for _, s in pairs(valid_evaluation_tests) do
+--		 RetailMacro:evaluate_command(s)
+--	 end
 	
-	-- for i, s in pairs(valid_target_tests) do
-		-- parse_macro(s)
-	-- end
+--	 for _, s in pairs(invalid_evaluation_tests) do
+--		 RetailMacro:evaluate_command(s)
+--	 end
+--
+--	 for _, s in pairs(sequence_tests) do
+--		 RetailMacro:evaluate_command(s)
+--	 end
 	
-	-- for i, s in pairs(valid_evaluation_tests) do
-		-- parse_macro(s)
-	-- end
+--	 for _, s in pairs(parameter_test) do
+--		 RetailMacro:evaluate_command(s)
+--	 end
 	
-	-- for i, s in pairs(invalid_evaluation_tests) do
-		-- parse_macro(s)
-	-- end
-	
-	-- for i, s in pairs(sequence_tests) do
-		-- parse_macro(s)
-	-- end
-	
-	-- for i, s in pairs(parameter_test) do
-		-- parse_macro(s)
-	-- end
-	
-	-- for i, s in pairs(temp_test) do
-		-- parse_macro(s)
-	-- end
+--	 for _, s in pairs(temp_test) do
+--		 RetailMacro:evaluate_command(s)
+--	 end
 	
 	-- local t = Target:new("focus", Target.TYPE_FOCUS)
 	
@@ -175,5 +176,9 @@ function SlashCmdList.MACROTEST(msg, editbox)
 		-- print(s .. " = " .. r)
 	-- end
 	
-	reportActionButtons()
+--	reportActionButtons()
+--    RetailMacro:parse_macro("/cast [mod, @player] Unending Breath; Unending Breath /cast [mod, @player, form:0/2] Healing Touch; Healing Touch")
+
+--	print("RUN TESTS")
+--RetailMacro:inject()
 end

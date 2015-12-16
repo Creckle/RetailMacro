@@ -1,0 +1,9 @@
+## Interface: 11200
+
+## Title: Retail Macro Focus
+## Notes: Focus frame
+## Author: Creckle
+## Dependencies: RetailMacro
+
+default_frame.xml
+focus.lua

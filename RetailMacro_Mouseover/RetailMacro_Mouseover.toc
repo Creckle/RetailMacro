@@ -1,0 +1,9 @@
+## Interface: 11200
+
+## Title: Retail Macro Mouseover
+## Notes: Unitframe mouseover functionality for Retail Macro
+## Author: Creckle
+## Dependencies: RetailMacro
+
+blizzard_frames.lua
+mouseover.lua
