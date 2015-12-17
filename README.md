@@ -5,6 +5,7 @@ If you find a bug or if some command doesnt work as expected please post an issu
 # RetailMacro
 
 RetailMacro aims to bring the macro API from recent WoW versions to Vanilla WoW. This includes the bracket syntax ([]) and commands as described in http://wowwiki.wikia.com/wiki/Making_a_macro
+Here is a quick summary
 
 ###UNIT FRAMES
 * Default UI now has mouseover capability. (except raid pullout frames)
