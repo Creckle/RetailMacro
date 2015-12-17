@@ -103,7 +103,7 @@ Example macro for one button focus
 ###For developers
 
 Nearly every function that takes *unit id* as parameter has been altered to accept "focus" and "mouseover"
-functions
+parameters
 ```
 RetailMacro:get_focus()
 RetailMacro:get_mouseover()
