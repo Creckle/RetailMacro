@@ -56,15 +56,15 @@ Condition          | Value                              | Example
 
 *index* the stance index number as listed in the following table
 
-         | Warrior   | Druid                               | Priest               | Rogue	       | Shaman   
----------|-----------|-------------------------------------|----------------------|--------------|-------------
-Stance 0 |           | _no stance_                         | _no stance_          | _no stance_  | _no stance_
-Stance 1 | Battle    | Bear 	                             | Shadowform or        | Stealth 	   | Ghost Wolf 
-         |           |                                     | Spirit of Redemption |              |
-Stance 2 | Defensive | Cat                                 |                      |              | 			
-Stance 3 | Berserker | Travel                              |                      |              |
-         |           | (includes Aquatic and Flight forms) | 					            |              |
-Stance 4 |           | Moonkin                             |			                |              |
+         | Warrior   | Druid                   | Priest               | Rogue	    | Shaman   
+---------|-----------|-------------------------|----------------------|--------------|-------------
+Stance 0 |           | _no stance_             | _no stance_          | _no stance_  | _no stance_
+Stance 1 | Battle    | Bear 	           | Shadowform or        | Stealth 	    | Ghost Wolf 
+         |           |                         | Spirit of Redemption |              |
+Stance 2 | Defensive | Cat                     |                      |              | 			
+Stance 3 | Berserker | Travel                  |                      |              |
+         |           | (includes Aquatic form) | 		       |              |
+Stance 4 |           | Moonkin                 |		       |              |
 
 
 Mouseover has a .5 sec timeout except on unit frames.
