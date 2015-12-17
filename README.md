@@ -9,27 +9,29 @@ RetailMacro aims to bring the macro API from recent WoW versions to Vanilla WoW.
 ###MACROS
 #####Commands
 
-* "/cast"
-* "/castrandom"
-* "/castsequence"
-* "/stopcasting"
-* "/clearfocus"
-* "/focus"
-* "/targetfocus"
-* "/target"
-* "/cleartarget"
-* "/assist"
-* "/use"
-* "/userandom"
-* "/equip"
-* "/cancelaura"
-* "/cancelform"
-* "/petagressive"
-* "/petdefensive"
-* "/petpassive"
-* "/petattack"
-* "/petfollow"
-* "/petstay"
+Command         | Parameter
+----------------|-------------
+"/cast"         | spellname
+"/castrandom"   | comma separated list of spellnames
+"/castsequence" | _reset condition_ and comma separated list of spellnames
+"/stopcasting"  | none
+"/clearfocus"   | none
+"/focus"        | _unit id_
+"/targetfocus"  | none
+"/target"       | _unit id_
+"/cleartarget"  | none
+"/assist"       | _unit id_
+"/use"          | _inventory slot_ or _bagslot_ or itemname
+"/userandom"    | comma separated list of itemnames
+"/equip"        | 
+"/cancelaura"   | buffname
+"/cancelform"   | _index_
+"/petagressive" | none
+"/petdefensive" | none
+"/petpassive"   | none
+"/petattack"    | none
+"/petfollow"    | none
+"/petstay"      | none
 
 #####Conditions
 
@@ -49,16 +51,30 @@ Condition          | Value                              | Example
 "stance" / "form"  | none or _index_ or _expression_    | stance:1/2     
 "stealth"          | none                               |                
 
-*unit id* is either of the following
+*reset condition:* describes the timeout condition for when a sequence restarts
+```
+/castsequence reset=10 Curse of Agony, Corruption, Shadow Bolt
+```
+*inventory slot:* a number rangeing from 0 to 19 where 13 is the first trinket slot and 14 the secone one
+```
+/use 13           (use item in inventoryslot 13)
+```
+*bag slot:* two numbers separated by a whitespace; first number is for the bagslot and second number the container index of the according bag
+```
+/use 4 2          (use item number 2 in bag number 4)
+```
+*unit id:* is either of the following
 * "player"
 * "target"
 * "pet"
 * "partyN" where N is a number between 0 and 5
 * "raidN" where N is a number between 0 and 40
 
-*expression* a simple expression like "stance:1/2/3", which would translate to 'player is in either stance 1 or 2 or 3'
-
-*index* the stance index number as listed in the following table
+*expression:* a simple expression like "stance:1/2/3", which would translate to 'player is in either stance 1 or 2 or 3'
+```
+/cast [stance:0/4] Moonfire
+```
+*index:* the stance index number as listed in the following table
 
          | Warrior   | Druid                   | Priest               | Rogue	    | Shaman   
 ---------|-----------|-------------------------|----------------------|--------------|-------------
