@@ -1,9 +1,8 @@
-# RetailMacro
-
 ##DISCLAIMER
 RetailMacro is currently in alpha state and far from bugfree.
 If you find a bug or if some command doesnt work as expected please post an issue on github or message me ingame: Creckle on Nostalrius (alliance)
 
+# RetailMacro
 
 RetailMacro aims to bring the macro API from recent WoW versions to Vanilla WoW. This includes the bracket syntax ([]) and commands as described in http://wowwiki.wikia.com/wiki/Making_a_macro
 
