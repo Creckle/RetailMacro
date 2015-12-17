@@ -58,7 +58,7 @@ Condition          | Value                              | Example
 
          | Warrior   | Druid                               | Priest               | Rogue	       | Shaman   
 ---------|-----------|-------------------------------------|----------------------|--------------|-------------
-Stance 0 |           | No Stance                           | No Stance            | No Stance    | No Stance 
+Stance 0 |           | _no stance_                         | _no stance_          | _no stance   | _no stance_
 Stance 1 | Battle    | Bear 	                             | Shadowform or        | Stealth 	   | Ghost Wolf 
          |           |                                     | Spirit of Redemption |              |
 Stance 2 | Defensive | Cat                                 |                      |              | 			
