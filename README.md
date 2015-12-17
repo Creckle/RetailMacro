@@ -2,7 +2,7 @@
 
 Mouseover:
   Mouseover has a .5 sec timeout except on unit frames.
-  That means you cannot perform consecutive actions on the target by keeping the pointer over it.
+  That means you cannot perform consecutive actions on a target by keeping the pointer over it.
   
 Focus and Mouseover:
   Focus and Mouseover are stored internally by name.
