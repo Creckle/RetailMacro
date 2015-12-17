@@ -2,10 +2,12 @@
 
 RetailMacro aims to bring the macro API from recent WoW versions to Vanilla WoW. This includes the bracket syntax ([]) and commands as described in http://wowwiki.wikia.com/wiki/Making_a_macro
 
-Default UI now has mouseover capability. (except raid pullout frames)
-A focus frame was added
+###UNIT FRAMES
+* Default UI now has mouseover capability. (except raid pullout frames)
+* An experimental focus frame 
 
-Commands
+###MACROS
+#####Commands
 
 * "/cast"
 * "/castrandom"
@@ -28,6 +30,8 @@ Commands
 * "/petattack"
 * "/petfollow"
 * "/petstay"
+
+#####Conditions
 
 Condition          | Value                              | Example        
 -------------------|------------------------------------|----------------
@@ -79,3 +83,15 @@ Example macro for one button focus
 /target [nomod] focus
 /clearfocus [mod:ctrl]
 ```
+
+###For developers
+
+Nearly every function that takes *unit id* as parameter has been altered to accept "focus" and "mouseover"
+functions
+```
+RetailMacro:get_focus()
+RetailMacro:get_mouseover()
+RetailMacro:set_focus(string)
+RetailMacro:set_mouseover(string)
+```
+are available if you want to add the according ability to your unit frames
