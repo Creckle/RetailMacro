@@ -51,6 +51,8 @@ Condition          | Value                              | Example
 "stance" / "form"  | none or _index_ or _expression_    | stance:1/2     
 "stealth"          | none                               |                
 
+every condition can be negated by writing 'no' in front of it. For example "nocombat" and "nomod" are valid conditions
+
 *reset condition:* describes the timeout condition for when a sequence restarts
 ```
 /castsequence reset=10 Curse of Agony, Corruption, Shadow Bolt
@@ -69,6 +71,8 @@ Condition          | Value                              | Example
 * "pet"
 * "partyN" where N is a number between 0 and 5
 * "raidN" where N is a number between 0 and 40
+
+you can string together several 'target' behind every unit id. For example "playertarget" or "raid7target" or "pettargettargettargettarget" are valid unit ids, too
 
 *expression:* a simple expression like "stance:1/2/3", which would translate to 'player is in either stance 1 or 2 or 3'
 ```
