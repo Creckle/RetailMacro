@@ -90,19 +90,19 @@ Stance 3 | Berserker | Travel                  |                      |         
          |           | (includes Aquatic form) | 		       |              |
 Stance 4 |           | Moonkin                 |		       |              |
 
-
-Mouseover has a .5 sec timeout except on unit frames.
-That means you cannot perform consecutive actions on a target by keeping the pointer over it.
-  
-Focus and Mouseover are stored internally by name.
-This can lead to unpredictable behaviour in areas with NPCs who share the same name.
-
 Example macro for one button focus
 ```
 /focus [mod:alt, @mouseover]
 /target [nomod] focus
 /clearfocus [mod:ctrl]
 ```
+###CAUTION
+
+Mouseover has a .5 sec timeout except on unit frames.
+That means you cannot perform consecutive actions on a target by keeping the pointer over it.
+  
+Focus and Mouseover are stored internally by name.
+This can lead to unpredictable behaviour in areas with NPCs who share the same name.
 
 ###For developers
 
