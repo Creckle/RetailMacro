@@ -11,6 +11,45 @@ RetailMacro aims to bring the macro API from recent WoW versions to Vanilla WoW.
 * An experimental focus frame 
 
 ###MACROS
+
+#####Syntax
+######Condition
+there are 3 types of conditions, single conditions
+```
+combat
+```
+
+conditions that take a value
+```
+modifier:shift
+```
+
+and target conditions, which can expressed in two ways
+```
+target=player
+```
+is equal to
+```
+@player
+```
+
+######Condition Block
+a condition block consists of one or several comma separated conditions encompassed by square brackets
+```
+[condition]
+[condition, another condition, ..]
+```
+several blocks which are stringed together act as an OR condition. Empty blocks are possible and always evaluate
+
+######Sequence
+A sequence consists of zero to serveral condition blocks and an optional parameter.
+Sequences are divided by a semicolon.
+
+```
+/command sequence one; sequence two; sequence three
+/command [condition][condition, condition]parameter one; [condition] parameter two; parameter three 
+```
+
 #####Commands
 
 Command         | Parameter
