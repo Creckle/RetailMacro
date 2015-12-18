@@ -49,7 +49,8 @@ A sequence consists of zero to serveral condition blocks and an optional paramet
 Sequences are divided by a semicolon.
 
 ```
-/command sequence one; sequence two; sequence three
+/command parameter
+/comman [condition] parameter
 /command [condition][condition, condition]parameter one; [condition] parameter two; parameter three 
 ```
 
