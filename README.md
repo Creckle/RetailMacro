@@ -50,7 +50,7 @@ Sequences are divided by a semicolon.
 
 ```
 /command parameter
-/comman [condition] parameter
+/command [condition] parameter
 /command [condition][condition, condition]parameter one; [condition] parameter two; parameter three 
 ```
 
