@@ -70,7 +70,7 @@ Command         | Parameter
 "/assist"       | _unit id_
 "/use"          | _inventory slot_ or _bagslot_ or itemname
 "/userandom"    | comma separated list of itemnames
-"/equip"        | 
+"/equip"        | _inventory slot_ or _bagslot_ or itemname
 "/cancelaura"   | buffname
 "/cancelform"   | _index_
 "/petagressive" | none
