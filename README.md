@@ -16,7 +16,7 @@ Here is a quick summary:
 ###MACROS
 
 #####Syntax
-######Condition
+######Conditions
 there are 3 types of conditions, single conditions
 ```
 combat
@@ -27,7 +27,7 @@ conditions that take a value
 modifier:shift
 ```
 
-and target conditions, which can expressed in two ways
+and target conditions, which can be expressed in two ways
 ```
 target=player
 ```
