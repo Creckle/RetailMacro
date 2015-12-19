@@ -118,6 +118,8 @@ every condition can be negated by writing 'no' in front of it. For example "noco
 * "pet"
 * "partyN" where N is a number between 0 and 5
 * "raidN" where N is a number between 0 and 40
+* "focus"
+* "mouseover"
 
 you can string together several 'target' behind every unit id. For example "playertarget" or "raid7target" or "pettargettargettargettarget" are valid unit ids, too
 
@@ -145,7 +147,7 @@ Example macro for one button focus
 ```
 ###CAUTION
 
-Mouseover has a .5 sec timeout except on unit frames.
+Mouseover has a .75 sec timeout except on unit frames.
 That means you cannot perform consecutive actions on a target by keeping the pointer over it.
   
 Focus and Mouseover are stored internally by name.
@@ -153,11 +155,8 @@ This can lead to unpredictable behaviour in areas with NPCs who share the same n
 
 ###For developers
 
-Nearly every function that takes *unit id* as parameter has been altered to accept "focus" and "mouseover"
-parameters
+functions "UnitName(unit)", "UnitExists(unit)", "TargetUnit(unit)", "UnitIsPlayer(unit)" and some more now accept "focus" and "mouseover" as parameter
 ```
-RetailMacro:get_focus()
-RetailMacro:get_mouseover()
 RetailMacro:set_focus(string)
 RetailMacro:set_mouseover(string)
 ```
